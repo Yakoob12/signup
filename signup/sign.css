@@ -1,0 +1,99 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(82, 82, 96, 0.8), rgba(14, 14, 16, 0.8)),url(pexels-esrakorkmaz-20842233.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width:400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    padding: 50px 60px 60px;
+    text-align: center;
+
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #fdfdfe;
+    position: relative;
+
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background:#ffffff;
+    position: absolute; 
+    bottom: -12px;
+    left: 47%;
+    transform: translateY(-50%);
+}
+.imput-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.imput-field i{
+    margin-left: 15px;
+    color: #999;
+}
+.imput-field{
+    margin-left: 15px;
+    
+}
+.a{
+    color: #fff;
+    margin-right:150px;
+}
+.a a{
+    color: #fff;
+    
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 45%;
+    background-color: #b8a5d7;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    height: 280px;
+}
+.btn-field button.disable{
+    background: #f3eaea;
+}
